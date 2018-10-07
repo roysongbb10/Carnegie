@@ -2,39 +2,11 @@
     CONSOLE APPLICATION : MultiGet Project Overview
 ========================================================================
 
-AppWizard has created this MultiGet application for you.
+Use thread pool to download file in chunks 
+Libcurl is used to download file
+Store chunk data in another thread to improve performance a bit
 
-This file contains a summary of what you will find in each of the files that
-make up your MultiGet application.
-
-
-MultiGet.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-MultiGet.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-MultiGet.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named MultiGet.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
+Test command line:
+-u http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3242.pdf -f 123.pdf -n 0
 
 /////////////////////////////////////////////////////////////////////////////
